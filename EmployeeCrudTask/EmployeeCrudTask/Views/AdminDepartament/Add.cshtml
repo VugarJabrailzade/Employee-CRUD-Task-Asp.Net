@@ -1,0 +1,25 @@
+﻿@using EmployeeCrudTask.Database.DomainModels;
+@using EmployeeCrudTask.ViewModel;
+@model DepartamentAddRequestViewModel
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-header">
+            <p class="text-muted mb-0">Add New Product.</p>
+        </div><!--end card-header-->
+        <div class="card-body">
+            <form asp-route="add-departament" method="POST">
+                <div class="form-group">
+                    <label asp-for="Name"> Departament Name:</label>
+                    <input asp-for="Name" type="text" class="form-control" id="productName" placeholder="Enter product name">
+                    <span  class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Product</button>
+            </form>
+        </div><!--end card-body-->
+    </div><!--end card-->
+</div>

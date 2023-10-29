@@ -1,0 +1,23 @@
+﻿@using EmployeeCrudTask.ViewModel;
+@model  DepartamentEditResponseViewModel
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-header">
+            <p class="text-muted mb-0">Update Product.</p>
+        </div><!--end card-header-->
+        <div class="card-body">
+            <form asp-route="edit-departament" asp-route-id="@Model.Id"  method="POST">
+                <div class="form-group">
+                    <label asp-for="Name">Departament Name:</label>
+                    <input asp-for="Name" type="text" class="form-control" id="departamentName" placeholder="Enter product name">
+                </div>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+        </div><!--end card-body-->
+    </div><!--end card-->
+</div>

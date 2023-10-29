@@ -1,0 +1,49 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EmployeeCrudTask
+build_property.RootNamespace = EmployeeCrudTask
+build_property.ProjectDir = C:\Users\vcebr\OneDrive\Desktop\Employee-CRUD-Task-Asp.Net\EmployeeCrudTask\EmployeeCrudTask\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\vcebr\OneDrive\Desktop\Employee-CRUD-Task-Asp.Net\EmployeeCrudTask\EmployeeCrudTask
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Employee-CRUD-Task-Asp.Net/EmployeeCrudTask/EmployeeCrudTask/Views/AdminDepartament/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EZXBhcnRhbWVudFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Employee-CRUD-Task-Asp.Net/EmployeeCrudTask/EmployeeCrudTask/Views/AdminDepartament/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EZXBhcnRhbWVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Employee-CRUD-Task-Asp.Net/EmployeeCrudTask/EmployeeCrudTask/Views/AdminDepartament/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EZXBhcnRhbWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Employee-CRUD-Task-Asp.Net/EmployeeCrudTask/EmployeeCrudTask/Views/Admin/Employee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRW1wbG95ZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Employee-CRUD-Task-Asp.Net/EmployeeCrudTask/EmployeeCrudTask/Views/Admin/EmployeeAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRW1wbG95ZWVBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Employee-CRUD-Task-Asp.Net/EmployeeCrudTask/EmployeeCrudTask/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Employee-CRUD-Task-Asp.Net/EmployeeCrudTask/EmployeeCrudTask/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Employee-CRUD-Task-Asp.Net/EmployeeCrudTask/EmployeeCrudTask/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
