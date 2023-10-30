@@ -122,10 +122,12 @@ namespace EmployeeCrudTask.Database.Repositeries
 
 
         }
-        public void Update(Employee employeeCode)
+        public void Update(Employee employee)
         {
 
-            var selectQuery = $"Select e.\"employeecode\" From employee as e\r\nWhere e.\"employeecode\" = '{employeeCode}'";
+            var selectQuery = $"UPDATE employee\r\nSET name='{employee.Name}',surname='{employee.Surname}'," +
+                                $"father_name='{employee.FatherName}',fincode='{employee.FinCode}',email='{employee.Email}'," +
+                                $"employee_img='{employee.EmployeeImg}',departamentid='{employee.DepartamentId}'\r\nWHERE employeecode='{employee.EmployeeCode}'";
 
             using NpgsqlCommand command = new NpgsqlCommand(selectQuery, _npgsqlConnection);
             command.ExecuteNonQuery();

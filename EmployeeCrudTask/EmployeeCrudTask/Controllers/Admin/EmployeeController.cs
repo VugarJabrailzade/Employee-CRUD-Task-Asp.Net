@@ -139,47 +139,50 @@ namespace EmployeeCrudTask.Controllers.Admin
         }
 
         [HttpPost]
-        //public IActionResult SubmitEmployeeEdit()
-        //{
-        //    if (!ModelState.IsValid)
-        //        return PrepareValidationView("Views/Admin/Product/ProductEdit.cshtml");
+        public IActionResult SubmitEmployeeEdit(EmployeeUpdateViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return View("Employee");
 
-        //    if (model.CategoryId != null)
-        //    {
-        //        var category = _categoryRepository.GetById(model.CategoryId.Value);
-        //        if (category == null)
-        //        {
-        //            ModelState.AddModelError("CategoryId", "Category doesn't exist");
+            if (model.DepartamentId != null)
+            {
+                var category = _departamentRepository.GetById(model.DepartamentId.Value);
+                if (category == null)
+                {
+                    ModelState.AddModelError("CategoryId", "Category doesn't exist");
 
-        //            return PrepareValidationView("Views/Admin/Product/ProductAdd.cshtml");
-        //        }
-        //    }
+                    return View("Employee");
+                }
+            }
 
-        //    Product product = _productRepository.GetById(model.Id);
-        //    if (product == null)
-        //        return NotFound();
-
-
-        //    product.Name = model.Name;
-        //    product.Price = model.Price;
-        //    product.Rating = model.Rating;
-        //    product.CategoryId = model.CategoryId;
+            Employee employee = _employeeRepository.GetByEmployeeCode(model.EmployeeCode);
+            if (employee == null)
+                return NotFound();
 
 
-        //    try
-        //    {
-        //        _productRepository.Update(product);
-        //    }
-        //    catch (PostgresException e)
-        //    {
-        //        _logger.LogError(e, "Postgresql Exception");
-
-        //        throw e;
-        //    }
+            employee.Name = model.Name;
+            employee.Surname = model.Surname;
+            employee.FatherName = model.FatherName;
+            employee.FinCode = model.Fincode;
+            employee.Email = model.Email;
+            employee.EmployeeImg = model.Employeeimg;
+            employee.DepartamentId = model.DepartamentId;
 
 
-        //    return RedirectToAction("Products");
-        //}
+            try
+            {
+                _employeeRepository.Update(employee);
+            }
+            catch (PostgresException e)
+            {
+                _logger.LogError(e, "Postgresql Exception");
+
+                throw e;
+            }
+
+
+            return RedirectToAction("Products");
+        }
 
 
         #endregion

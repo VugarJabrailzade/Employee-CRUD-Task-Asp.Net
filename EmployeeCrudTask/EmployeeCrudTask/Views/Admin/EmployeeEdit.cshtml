@@ -11,7 +11,7 @@
             <p class="text-muted mb-0">Update Product.</p>
         </div><!--end card-header-->
         <div class="card-body">
-            <form asp-controller="Employee" asp-action="EmployeeEdit" method="POST">
+            <form asp-controller="Employee" asp-action="SubmitEmployeeEdit" asp-route-employeecode="@Model.EmployeeCode" method="POST">
                 <div class="form-group">
                     <label asp-for="Name">Product Name:</label>
                     <input asp-for="Name" type="text" class="form-control" id="productName" placeholder="Enter product name">
