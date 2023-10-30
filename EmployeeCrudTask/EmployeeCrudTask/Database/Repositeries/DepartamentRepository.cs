@@ -37,6 +37,7 @@ namespace EmployeeCrudTask.Database.Repositeries
             return departaments;
         }
 
+
         public Departament GetById(int id)
         {
             using NpgsqlCommand command = new NpgsqlCommand($"SELECT * FROM departament WHERE departament_id={id}", _npgsqlConnection);

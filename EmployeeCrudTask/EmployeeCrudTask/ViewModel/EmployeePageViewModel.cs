@@ -2,19 +2,25 @@
 {
     public class EmployeePageViewModel
     {
-        public EmployeePageViewModel(int id, string name, string surname, string fatherName, string emloyeeCode)
+        public EmployeePageViewModel()
         {
-            Id = id;
+        }
+
+        public EmployeePageViewModel( string name, string surname, string fatherName, string emloyeeCode, int? departamentId)
+        {
+            
             Name = name;
             Surname = surname;
             FatherName = fatherName;
             EmloyeeCode = emloyeeCode;
+            DepartamentId = departamentId;
         }
 
-        public int Id { get; set; }
+        
         public string Name { get; set; }
         public string Surname { get; set; }
         public string FatherName { get; set; }
         public string EmloyeeCode { get; set; }
+        public int? DepartamentId { get; set; }
     }
 }

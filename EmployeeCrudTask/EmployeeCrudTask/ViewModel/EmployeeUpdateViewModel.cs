@@ -1,7 +1,7 @@
 ﻿namespace EmployeeCrudTask.ViewModel
 {
-    public class EmployeeUpdateViewModel 
+    public class EmployeeUpdateViewModel : BaseEmployeeViewModel
     {
-
+        
     }
 }
